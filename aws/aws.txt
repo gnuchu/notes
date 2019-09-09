@@ -1,0 +1,146 @@
+EC2|Compute
+Lightsail|Compute
+ECR|Compute
+ECS|Compute
+EKS|Compute
+Lambda|Compute
+Batch|Compute
+Elastic Beanstalk|Compute
+Serverless Application Repository|Compute
+S3|Storage
+EFS|Storage
+FSx|Storage
+S3 Glacier|Storage
+Storage Gateway|Storage
+AWS Backup|Storage
+RDS|Database
+DynamoDB|Database
+ElastiCache|Database
+Neptune|Database
+Amazon Redshift|Database
+Amazon QLDB|Database
+Amazon DocumentDB|Database
+AWS Migration Hub|Migration And Transfer
+Application Discovery Service|Migration And Transfer
+Database Migration Service|Migration And Transfer
+Server Migration Service|Migration And Transfer
+AWS Transfer for SFTP|Migration And Transfer
+Snowball|Migration And Transfer
+DataSync|Migration And Transfer
+VPC|Networking And Content Delivery
+CloudFront|Networking And Content Delivery
+Route 53|Networking And Content Delivery
+API Gateway|Networking And Content Delivery
+Direct Connect|Networking And Content Delivery
+AWS App Mesh|Networking And Content Delivery
+AWS Cloud Map|Networking And Content Delivery
+Global Accelerator|Networking And Content Delivery
+CodeStar|Developer Tools
+CodeCommit|Developer Tools
+CodeBuild|Developer Tools
+CodeDeploy|Developer Tools
+CodePipeline|Developer Tools
+Cloud9|Developer Tools
+X-Ray|Developer Tools
+AWS RoboMaker|Robotics
+Amazon Managed Blockchain|Blockchain
+Ground Station|Satellite
+AWS Organizations|Management And Governance
+CloudWatch|Management And Governance
+AWS Auto Scaling|Management And Governance
+CloudFormation|Management And Governance
+CloudTrail|Management And Governance
+Config|Management And Governance
+OpsWorks|Management And Governance
+Service Catalog|Management And Governance
+Systems Manager|Management And Governance
+Trusted Advisor|Management And Governance
+Managed Services|Management And Governance
+Control Tower|Management And Governance
+AWS License Manager|Management And Governance
+AWS Well-Architected Tool|Management And Governance
+Personal Health Dashboard|Management And Governance
+AWS Chatbot|Management And Governance
+Elastic Transcoder|Media Services
+Kinesis Video Streams|Media Services
+MediaConnect|Media Services
+MediaConvert|Media Services
+MediaLive|Media Services
+MediaPackage|Media Services
+MediaStore|Media Services
+MediaTailor|Media Services
+Elemental Appliances & Software|Media Services
+Amazon SageMaker|Machine Learning
+Amazon Comprehend|Machine Learning
+AWS DeepLens|Machine Learning
+Amazon Lex|Machine Learning
+Machine Learning|Machine Learning
+Amazon Polly|Machine Learning
+Rekognition|Machine Learning
+Amazon Transcribe|Machine Learning
+Amazon Translate|Machine Learning
+Amazon Personalize|Machine Learning
+Amazon Forecast|Machine Learning
+Amazon Textract|Machine Learning
+AWS DeepRacer|Machine Learning
+Analytics|Machine Learning
+Athena|Machine Learning
+EMR|Machine Learning
+CloudSearch|Machine Learning
+Elasticsearch Service|Machine Learning
+Kinesis|Machine Learning
+QuickSight|Machine Learning
+Data Pipeline|Machine Learning
+AWS Glue|Machine Learning
+AWS Lake Formation|Machine Learning
+MSK|Machine Learning
+IAM|Security Identity And Compliance
+Resource Access Manager|Security Identity And Compliance
+Cognito|Security Identity And Compliance
+Secrets Manager|Security Identity And Compliance
+GuardDuty|Security Identity And Compliance
+Inspector|Security Identity And Compliance
+Amazon Macie|Security Identity And Compliance
+AWS Single Sign-On|Security Identity And Compliance
+Certificate Manager|Security Identity And Compliance
+Key Management Service|Security Identity And Compliance
+CloudHSM|Security Identity And Compliance
+Directory Service|Security Identity And Compliance
+WAF & Shield|Security Identity And Compliance
+Artifact|Security Identity And Compliance
+Security Hub|Security Identity And Compliance
+AWS Amplify|Mobile
+Mobile Hub|Mobile
+AWS AppSync|Mobile
+Device Farm|Mobile
+Amazon Sumerian|AR And VR
+Step Functions|Application Integration
+Amazon EventBridge|Application Integration
+Amazon MQ|Application Integration
+Simple Notification Service|Application Integration
+Simple Queue Service|Application Integration
+SWF|Application Integration
+AWS Cost Explorer|AWS Cost Management
+AWS Budgets|AWS Cost Management
+AWS Marketplace Subscriptions|AWS Cost Management
+Amazon Connect|Customer Engagement
+Pinpoint|Customer Engagement
+Simple Email Service|Customer Engagement
+Alexa for Business|Business Applications
+Amazon Chime|Business Applications
+WorkMail|Business Applications
+WorkSpaces|End User Computing
+AppStream 2.0|End User Computing
+WorkDocs|End User Computing
+WorkLink|End User Computing
+IoT Core|Internet of Things
+Amazon FreeRTOS|Internet of Things
+IoT 1-Click|Internet of Things
+IoT Analytics|Internet of Things
+IoT Device Defender|Internet of Things
+IoT Device Management|Internet of Things
+IoT Events|Internet of Things
+IoT Greengrass|Internet of Things
+IoT SiteWise|Internet of Things
+IoT Things Graph|Internet of Things
+Amazon GameLift|Game Development
