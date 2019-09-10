@@ -1,0 +1,75 @@
+require 'redcarpet'
+require 'fileutils'
+
+def pass
+  0
+end
+
+def globfile(file)
+  contents = ""
+  open(file, "r").each do |line|
+    contents += line
+  end
+  
+  return contents
+end
+
+desc "Default task does nothing"
+task :default do
+  pass
+end
+
+desc "Build html site from markdown"
+task :buildsite do
+  output_base = './site'
+  FileUtils.rmtree output_base if Dir.exist?(output_base)
+  FileUtils.mkdir_p output_base
+  FileUtils.cp_r 'assets/js', output_base
+  FileUtils.cp_r 'assets/css', output_base
+
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+
+  indexheader = globfile('templates/indexheader.html')
+  pageheader = globfile('templates/pageheader.html')
+  footer = globfile('templates/footer.html')
+
+  index_md = "./output/aws.md"
+  index_html = "#{output_base}/index.html"
+  FileUtils.touch index_html
+  
+  index_data = globfile(index_md)
+  index_data.gsub!(/pages\//,"")
+  index_data.gsub!(/\.md/,".html")
+
+  converted_index = markdown.render(index_data)
+  index_page = indexheader + converted_index + footer
+
+  open(index_html, "w") do |f|
+    f << index_page
+  end
+
+  files_to_convert = Dir.glob("output/pages/**/**")
+  
+  files_to_convert.each do |file|
+    #Read the input file so we have something to convert.
+    next if !File.file? file
+
+    input_data = globfile(file)
+    input_data = input_data.gsub(/\.\.\/\.\.\/aws.md/, "../index.html")
+
+    #create output path and file.
+    (output, pages, area, service) = file.split(/\//)
+    target_file = service.gsub(/\.md/, ".html")
+    target_dir = "#{output_base}/#{area}"
+    FileUtils.mkdir_p(target_dir)
+
+    output_path = "#{target_dir}/#{target_file}"
+    FileUtils.touch output_path
+
+    converted_data = markdown.render(input_data)
+    page = pageheader + converted_data + footer
+    open(output_path, "w") do |f|
+      f << page
+    end
+  end
+end

@@ -10,12 +10,14 @@ GEM
     pry-byebug (3.7.0)
       byebug (~> 11.0)
       pry (~> 0.10)
+    redcarpet (3.5.0)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
   pry-byebug
+  redcarpet
 
 BUNDLED WITH
    2.0.2

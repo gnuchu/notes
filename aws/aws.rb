@@ -2,13 +2,11 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 
-
 require 'fileutils'
 
 old_area = ""
 output = "# AWS Notes\n"
 output = "## Services\n"
-
 
 def flatten(str)
   str.gsub(/\s+/, '')
@@ -31,7 +29,15 @@ def processNewService(area, service)
 end
 
 count = 0
-File.open('aws.txt').each do |line|
+output_dir = 'output'
+FileUtils.rmtree(output_dir)
+FileUtils.mkdir_p(output_dir)
+start_dir = Dir.pwd
+Dir.chdir(output_dir)
+
+inputfile = "#{start_dir}/input/aws.txt"
+
+File.open(inputfile).each do |line|
   count += 1
 
   (service, area) = line.split(/\|/)
@@ -58,3 +64,5 @@ end
 open("aws.md", "w") do |f|
   f << output
 end
+
+Dir.chdir(start_dir)
