@@ -29,8 +29,7 @@ def processNewService(area, service)
 end
 
 count = 0
-output_dir = 'output'
-FileUtils.rmtree(output_dir)
+output_dir = 'output/' + Time.now.strftime("%Y%m%d%H%m%S").to_s
 FileUtils.mkdir_p(output_dir)
 start_dir = Dir.pwd
 Dir.chdir(output_dir)
